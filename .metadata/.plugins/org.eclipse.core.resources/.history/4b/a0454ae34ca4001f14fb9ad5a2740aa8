@@ -1,0 +1,37 @@
+package Revisao;
+
+import java.util.Scanner;
+
+public class Produto {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);	
+	
+    int idProduto;
+    double precoUnitario,quantidade, taxaImposto;
+    String nomeProduto, descricaoProduto;
+    
+    System.out.println("Id produto: ");
+    idProduto = scan.nextInt();
+    System.out.println("Nome do produto: ");
+    nomeProduto = scan.nextLine();
+    System.out.println("Descricao do produto: ");
+    descricaoProduto = scan.nextLine();
+    System.out.println("Quantidade: ");
+    quantidade = scan.nextInt();
+    System.out.println("Preco unitario: ");
+    precoUnitario = scan.nextDouble();
+    System.out.println("Taxa de imposto: ");
+    taxaImposto = scan.nextDouble();
+    double precoTotal = precoUnitario * quantidade;
+    double valorTotal = precoTotal * taxaImposto;
+    System.out.println("Resumo da compra: "+ "Produto:" + nomeProduto + "Valor Total da compra: " + precoTotal +
+    		valorTotal);
+
+    
+    
+    
+	
+	}
+
+}

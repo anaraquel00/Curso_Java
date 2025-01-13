@@ -1,0 +1,26 @@
+package métodos;
+
+import java.util.Scanner;
+
+public class switch_estacoes_ano {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);	
+
+	System.out.println("Digite um mês do ano:");
+	String mes = scan.nextLine();
+	String estacao;
+	switch (mes) {
+	case "dezembro","janeiro","fevereiro" -> estacao = "verao";
+	
+	case "março","abril","maio" -> estacao = "outono";
+	
+	case "junho","julho","agosto" -> estacao = "inverno";
+	
+	case "setembro", "outubro","novembro" -> estacao = "primavera";
+	
+	default -> System.err.println("Nao existe!");
+	}
+      System.out.printf("E o mês de "+ mes);
+}
+}

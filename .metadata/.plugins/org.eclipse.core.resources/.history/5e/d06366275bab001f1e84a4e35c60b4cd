@@ -1,0 +1,52 @@
+package métodos;
+
+import java.util.Scanner;
+
+public class switch_menu_restaurante {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner (System.in);	
+	/*
+	 * Um restaurante tem um menu 
+	 * com os seguintes pratos e preços: 
+	 * • 1: Pizza →	 * R$35. 
+	 * • 2: Hambúrguer → R$20. 
+	 * • 3: Salada → R$15. 
+	 * • 4: Refrigerante → R$5.
+	 * Receba o código do prato e a quantidade desejada.
+	 * Exiba o valor total a pagar. Se o código for inválido, 
+	 * exiba "Prato não disponível".
+	 */ 
+   System.out.println("Digite o código do prato:\n•1: Pizza\n"
+   		+ "• 2: Hambúrguer\n"
+   		+ "• 3: Salada\n"
+   		+ "• 4: Refrigerante) ");
+   int codigoPrato = scan.nextInt();
+   double valorPrato = scan.nextDouble();
+   switch (codigoPrato) {
+   case 1:
+	  valorPrato = 35.00;
+   break;
+   case 2:
+	   valorPrato = 20.00;
+   break;
+   case 3:
+	   valorPrato = 15.00;
+   break;
+   case 4:
+	   valorPrato = 5.00;
+   break;
+   default:
+	   valorPrato = 0;
+	
+System.out.println("O prato escolhido foi " +codigoPrato+ "de" +valorPrato+ "reais." );	   
+scan.close();	   
+	   
+   }
+   
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package Livro;
+
+public class CadastroDeLivros {
+public static void main(String[] args) {
+	Autor autor = new Autor();
+    autor.nome = "Rodrigo Turini";
+    autor.email = "rodrigo.turini@caelum.com.br";
+    autor.cpf = "123.456.789.10";
+	
+    Livro livro = new Livro();
+	livro.nome = "Java 8 Prático";
+	livro.descriçao = "Novos recursos da linguagem";
+	livro.valor =  59.90;
+	livro.isbn = "978-85-66250-46-6";
+	System.out.println(livro.nome);
+	System.out.println(livro.descriçao);
+	System.out.println(livro.valor);
+	System.out.println(livro.isbn);
+	livro.mostrarDetalhes();
+	
+
+	Livro outroLivro = new Livro();
+	outroLivro.nome = "Lógica de Programação";
+	outroLivro.descriçao = "Crie seus primeiros programas";
+	outroLivro.valor = 59.90;
+	outroLivro.isbn = "978-85-66250-22-0";
+	
+	System.out.println(outroLivro.nome);
+	System.out.println(outroLivro.descriçao);
+	System.out.println(outroLivro.valor);
+	System.out.println(outroLivro.isbn);
+    outroLivro.mostrarDetalhes();
+    
+    
+   
+    
+}
+}

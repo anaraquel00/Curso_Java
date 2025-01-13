@@ -1,0 +1,44 @@
+package Livro;
+
+public class CadastroDeLivros {
+public static void main(String[] args) {
+	Autor autor = new Autor();
+    autor.setNome("Rodrigo Turini");
+    autor.setEmail("rodrigo.turini@caelum.com.br"); 
+    autor.setCpf("123.456.789.10"); 
+	
+    Livro livro = new Livro();
+	livro.setNome("Java 8 Prático"); 
+	livro.setDescriçao("Novos recursos da linguagem");
+	livro.setValor(59.90);
+	livro.setIsbn("978-85-66250-46-6");
+	System.out.println(livro.getNome());
+	System.out.println(livro.getDescriçao());
+	System.out.println(livro.getValor());
+	System.out.println(livro.getIsbn());
+	System.out.println("Valor atual: " + livro.valor);
+	livro.valor -= livro.valor * 0.1;
+	System.out.println("Valor com desconto: " + livro.valor);
+	livro.autor = autor;
+	livro.mostrarDetalhes();
+	
+    Autor outroAutor = new Autor();
+    outroAutor.setNome("Paulo Silveira");
+    outroAutor.setEmail("paulo.silveira@caelum.com.br");
+    outroAutor.setCpf("123.456.789.10"); 
+    
+	Livro outroLivro = new Livro();
+	outroLivro.setNome("Lógica de Programação"); 
+	outroLivro.setDescriçao("Crie seus primeiros programas");
+	outroLivro.setValor(59.90); 
+	outroLivro.setIsbn("978-85-66250-22-0"); 
+	
+	outroLivro.setAutor(outroAutor);
+	
+	outroLivro.mostrarDetalhes();
+    
+    
+   
+    
+}
+}

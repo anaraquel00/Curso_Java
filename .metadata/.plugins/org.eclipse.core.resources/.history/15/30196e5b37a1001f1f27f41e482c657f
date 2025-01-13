@@ -1,0 +1,10 @@
+package Condicionais_Compostas;
+
+public class Num_Inteiros {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package Revisao2;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExCondicional {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+	Double tempC;
+	Double tempF;
+	
+	System.out.println("Qual é a melhor temperatura "
+			+ "para o experimento em Celcius? ");
+	tempC = scan.nextDouble();
+	tempF = (9 * tempC + 160) / 5;
+	
+	if (tempF > 45 && tempF < 90) {
+		System.out.println("Temperatura " +tempF+ " é ideal para "
+				+ "a realizacao do experimento!!");
+	}
+	else {
+	System.out.println("Temperatura " +tempF+ " é inapropriada para o experimento!!");
+		
+		
+	}
+  }
+}

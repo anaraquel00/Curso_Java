@@ -1,0 +1,42 @@
+package métodos;
+
+import java.util.Scanner;
+
+public class switch_JoKePo {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);	
+    System.out.println("Digite umas dessas opçoes:\n1)Pedra\n2)Papel\n3)Tesoura");
+	int opcao = scan.nextInt();
+	
+	switch (opcao) {
+	 
+	case 1: String Pedra;
+	if (opcao == 1) {
+		System.out.println("Você ganhou");
+	}
+	else { System.out.println("Você perdeu");
+		
+	}
+	case 2: String Papel;
+	if (opcao == 2) {
+		System.out.println("Você ganhou");
+	}
+	else { System.out.println("Você perdeu");
+	
+	}
+	case 3: String Tesoura;
+	if (opcao== 3) {
+		System.out.println("Você ganhou");
+	}
+	else { System.out.println("Você perdeu");
+	}
+	default: System.err.println("Dados invalidos!");
+	
+	
+	}
+	
+	
+	}
+
+}

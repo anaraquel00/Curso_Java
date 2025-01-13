@@ -1,0 +1,11 @@
+package Livro;
+
+public class Livro {
+
+String nome;
+String descriçao;
+Double valor;
+String isbn;
+	
+
+}

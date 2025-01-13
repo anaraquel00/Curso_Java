@@ -1,0 +1,24 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class Num_Inteiros {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Digite o primeiro nùmero: ");
+	int numero1 = scanner.nextInt();
+	System.out.println("Digite o segundo numero: ");
+	int numero2 = scanner.nextInt();
+	if (numero1 > numero2) { 
+		System.out.printf("O primeiro numero (%d) é maior que o segundo");}
+	if (numero2 > numero1) {
+		System.out.printf("O segundo numero (%d) é maior que o primeiro");}
+	else { System.out.println("Os dois sao iguais");
+	}
+		
+		
+	}
+	}
+
+

@@ -1,0 +1,19 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class Pedra_Papel_Tesoura {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);	
+	System.out.println("Pedra, Papel ou Tesoura? ");
+	String Pedra = scanner.nextLine();
+	String Papel = scanner.nextLine();
+	String Tesoura = scanner.nextLine();
+	
+	}
+
+
+	}
+
+}

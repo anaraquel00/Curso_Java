@@ -1,0 +1,13 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class Sorteio {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Math.random();
+		int randomNum = (int) (Math.random()*5);
+	}
+
+}

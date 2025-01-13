@@ -1,0 +1,17 @@
+package Revisao_LacoFor;
+
+public class Desafio_Laco {
+
+	public static void main(String[] args) {
+	
+	int s = 0;
+	int dividendo = 0;
+	int divisor = 0;
+	
+	for(divisor = 1; divisor <=50; divisor++);{
+	System.out.println(dividendo + "/" + divisor + " - " + s);
+	dividendo = dividendo + 2;
+	System.out.println("Sequencia = " + s);
+	}
+	}
+}

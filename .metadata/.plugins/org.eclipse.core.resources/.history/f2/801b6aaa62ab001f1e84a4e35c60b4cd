@@ -1,0 +1,67 @@
+package métodos;
+
+import java.text.Format;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class switch_menu_restaurante {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner (System.in);	
+	Locale.setDefault(Locale.US);
+	
+	/*
+	 * Um restaurante tem um menu 
+	 * com os seguintes pratos e preços: 
+	 * • 1: Pizza →	 * R$35. 
+	 * • 2: Hambúrguer → R$20. 
+	 * • 3: Salada → R$15. 
+	 * • 4: Refrigerante → R$5.
+	 * Receba o código do prato e a quantidade desejada.
+	 * Exiba o valor total a pagar. Se o código for inválido, 
+	 * exiba "Prato não disponível".
+	 */ 
+	 // Exibir o menu
+	System.out.println("Menu do Restaurante:");
+    System.out.println("1: Pizza → R$35");
+    System.out.println("2: Hambúrguer → R$20");
+    System.out.println("3: Salada → R$15");
+    System.out.println("4: Refrigerante → R$5");
+	
+    // Receber o código do prato
+    System.out.println("Digite o código do prato:");
+   
+	int codigoPrato = scan.nextInt();
+    
+    // Receber a quantidade desejada
+    System.out.println("Digite a quantidade:");
+    int quantidade = scan.nextInt();
+
+    // Variável para armazenar o valor total
+   double valorTotal = Integer.parseInt(scan.nextLine());
+
+ switch (codigoPrato) {
+   case 1:
+	   valorTotal = 35.0 * quantidade;
+	  System.out.printf("Você pediu %d pizza(s)! O valor foi de R$%.2f%n",valorTotal);
+   break;
+   case 2:
+	   valorTotal = 20.0 * quantidade;
+	   System.out.printf("Você pediu %d hamburguer(s)! O valor foi de R$%2f%n"+valorTotal);
+   break;
+   case 3:
+	   valorTotal = 15.0 * quantidade;
+	   System.out.printf("Você pediu %d salada(s)! O valor foi de R$%2f%n"+valorTotal);
+   break;
+   case 4:
+	   valorTotal = 5.0 * quantidade;
+	   System.out.printf("Você pediu %d refrigerantes! O valor foi de R$%2f%n"+valorTotal);
+   break;
+   default:
+	  System.out.println("Prato nao disponivel");
+scan.close();	   
+	   
+   }
+   	
+	}
+}

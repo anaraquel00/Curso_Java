@@ -1,0 +1,46 @@
+package Revisao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Produto {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);	
+	scan.useLocale(Locale.US);
+	
+	//Entrada de variaveis:
+	
+    int idProduto;
+    double precoUnitario,quantidade, taxaImposto;
+    double valorImposto, valorProduto,valorTotal;
+    String nomeProduto, descricaoProduto;
+    
+    System.out.print("Id produto: ");
+    idProduto = Integer.parseInt(scan.nextLine());
+    System.out.print("Nome do produto: ");
+    nomeProduto = scan.nextLine();
+    System.out.print("Descricao do produto: ");
+    descricaoProduto = scan.nextLine();
+    System.out.println("Quantidade: ");
+    quantidade = Double.parseDouble(scan.nextLine());
+    System.out.println("Preco unitario: ");
+    precoUnitario = Double.parseDouble(scan.nextLine());
+    System.out.println("Taxa de imposto: ");
+    taxaImposto = Double.parseDouble(scan.nextLine());
+    
+    //Processamento
+    valorProduto = quantidade * precoUnitario;
+    valorImposto = (valorProduto * taxaImposto)/100;
+    valorTotal = valorProduto + valorImposto;
+    
+    System.out.printf("Resumo da compra: " +valorProduto+ ""
+    		+ "Valor Total da compra:", valorTotal);
+
+    
+    
+    
+	
+	}
+
+}

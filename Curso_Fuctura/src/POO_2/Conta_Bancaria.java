@@ -1,0 +1,103 @@
+package POO_2;
+
+public class Conta_Bancaria {
+private String Titular;
+protected String Tipo;
+public int numeroConta;
+private float Saldo;
+private boolean StatusConta;
+
+public boolean StatusdaConta() {
+System.out.println("----------------");
+System.out.println("Titular: "+this.getTitular());
+System.out.println("Num. da Conta: "+this.getNumeroConta());
+System.out.println("Saldo: "+this.getSaldo(Saldo));
+System.out.println("Status da conta: "+this.StatusConta);
+return StatusConta;
+}
+
+public void abrirConta(String t) {
+	this.setTipo(t);
+	this.setStatus(true);
+	if (t== "cc") {
+	this.setSaldo(50);
+	}
+	else if (t=="cp") {
+		this.setSaldo(150);
+	}
+	System.out.println("Conta aberta com sucesso!");
+}
+
+public void fecharConta() {
+	
+}
+
+public boolean StatusConta() {
+	return StatusdaConta();
+}
+
+public String getTipo() {
+	return Tipo;
+}
+
+public boolean isStatusConta() {
+	return StatusConta;
+}
+
+public void setStatusConta(boolean statusConta) {
+	StatusConta = statusConta;
+}
+
+public void setTipo(String tipo) {
+	Tipo = tipo;
+}
+
+public int getNumeroConta() {
+	return numeroConta;
+}
+public void setNumeroConta(int numeroConta) {
+	this.numeroConta = numeroConta;
+}
+
+public void setStatus(boolean status) {
+	StatusConta = status;
+}
+public String getTitular() {
+	return Titular;
+}
+public void setTitular(String titular) {
+	Titular = titular;
+}
+public float getSaldo(float d) {
+	return Saldo;
+}
+public float setSaldo(float saldo) {
+	return this.Saldo = Saldo;
+}
+public void depositar(float d) {
+	if 	(this.isStatusConta()) {
+	this.setSaldo(this.getSaldo(d)+d);
+		System.out.println("Deposito efetuado na conta de "+this.getTitular()+".");
+	} else {
+System.out.println("Impossivel realizar deposito em conta.");
+	}
+	if (this.isStatusConta()) {
+		this.getSaldo(this.getSaldo(Saldo)+d);
+		
+	}
+}
+public void sacar(float s) {
+	if (this.isStatusConta()) {
+		if (this.getSaldo(s)>=s);
+		    this.setSaldo(this.getSaldo(s)-s);
+		    System.out.println("Saque realizado na conta de "+
+		    		this.getTitular()+".");
+		} else { 
+	System.out.println("Saldo insuficiente para saque.");
+	}	 {
+		System.out.println("Impossivel sacar de uma conta fechada");
+		}
+	}
+}
+
+

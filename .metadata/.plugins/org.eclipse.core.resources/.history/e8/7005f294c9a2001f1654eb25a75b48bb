@@ -1,0 +1,45 @@
+package Revisao;
+
+public class ConversaoExplicita {
+
+	public static void main(String[] args) {
+		/**
+		 * Programa para conversão de dados
+		 * Explícitamente
+		 * @author Ana Raquel
+		 *
+		 */
+		
+		//do maior para o menor tipo
+		
+				long varLong = 9000000000000L;
+				int varInt = (int) varLong;
+				System.out.println("Long: " + varLong);
+				System.out.println("Int : " +  varInt);
+				
+				double varDouble = 3654.9875;
+				int varInt2 = (int) varDouble;
+				System.out.println("Double para int: " + varInt2);
+				
+				float varFloat = (float) varDouble;
+				System.out.println("Double para float: " + varFloat);
+
+				
+				/**
+				 * Programa para conversão de dados
+				 * Implicitamente
+				 * @author Ana Raquel
+				 *
+				 */
+				//do menor para o maior
+				
+				byte varByte = 21;
+				int varInt = varByte;
+				System.out.println("Byte: " + varByte); //concatenação
+				System.out.println("Int: " + varInt);
+				double varDouble = varByte;
+				System.out.println("Double: " + varDouble);
+				
+	}
+
+}

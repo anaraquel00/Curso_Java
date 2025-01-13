@@ -1,0 +1,42 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class Empréstimo {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		double valorEmprestimo;     /* indicar os parâmetros pra calcular */
+        double valorCasa;            
+        double salario;
+        double valorParcela;
+        int anos;
+        
+        System.out.println("Informe o valor do empréstimo desejado: ");
+        valorEmprestimo = scanner.nextDouble();
+        System.out.println("Informe o valor da casa: ");
+        valorCasa = scanner.nextDouble();
+        System.out.println("Informe o valor do seu salário: ");
+        salario = scanner.nextDouble();
+        System.out.println("Em quantos anos deseja quitar o empréstimo?");
+        anos = scanner.nextInt();
+		
+        valorParcela = valorEmprestimo / (anos * 12);
+        
+		double valorFinanciado = 0;
+        int prazoMeses = scanner.nextInt();          
+        double taxaMensal = 0.5;  
+        double prestacao = (valorFinanciado * taxaMensal) / (1 - Math.pow(1 + taxaMensal, -prazoMeses));
+        
+        if (valorParcela > ((salario * 30) / 100)) {
+            System.out.printf("O valor da parcela ficou em R$ %d", Math.round(valorParcela));
+            System.out.println("Sinto muito, o valor da parcela ultrapassa 30% do seu salário, o empréstimo foi negado.");
+        } else {
+            System.out.printf("O valor da parcela ficou em R$ %d", Math.round(valorParcela));
+            System.out.println("Parabéns, o empréstimo foi concedido!");
+        }
+        
+	}
+
+}

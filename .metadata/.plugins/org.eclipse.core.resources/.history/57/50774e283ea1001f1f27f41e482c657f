@@ -1,0 +1,28 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class Empresa {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Digite o nome do funcionario: ");
+		String nome = scanner.nextLine();
+		System.out.println("Salario de %s:");
+		double salario = scanner.nextDouble();
+		System.out.println("Quanto anos %s trabalha na empresa?");
+		int ano = scanner.nextInt();
+		if (ano <= 3) { 
+		ano = (int) (salario + 0.03);
+		System.out.printf("%s tera um aumento de % do salario",ano);       }
+		if (ano>=3 && ano<=10)	{
+			ano = (int) (salario + 0.125);
+			System.out.printf("%s tera um aumento de % do salario",ano);  }
+		else if (ano>=10) {	
+			ano = (int) (salario + 0.2);
+			System.out.printf("%s tera um aumento de % do salario",ano);  }
+		}
+		}
+	
+
+

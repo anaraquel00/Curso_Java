@@ -1,0 +1,15 @@
+package métodos;
+
+import java.util.Scanner;
+
+public class switch_JoKePo {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);	
+    System.out.println("Digite umas dessas opçoes:\n1)Pedra\n2)Papel\n3Tesoura");
+	
+	
+	
+	}
+
+}

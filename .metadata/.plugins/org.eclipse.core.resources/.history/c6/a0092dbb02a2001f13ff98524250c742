@@ -1,0 +1,47 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class Aluguel_Carros {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+
+        int diasAluguel;
+        double kmPercorrido = 0;
+        double valorTotal = 1;
+        int opcao;
+
+        System.out.println("O carro alugado foi popular ou de luxo? \n1 - Popular \n2 - Luxo");
+        opcao = scan.nextInt();
+        if (opcao == 1) {
+            System.out.println("O aluguel foi por quantos dias?");
+            diasAluguel = scan.nextInt();
+            System.out.println("Quantos quilômetros foram percorridos?");
+            kmPercorrido = scan.nextDouble();
+
+            if (kmPercorrido <= 100) {
+                valorTotal = (90 * diasAluguel) + (kmPercorrido * 0.2);
+            } else if (kmPercorrido > 100) {
+                valorTotal = (90 * diasAluguel) + (kmPercorrido * 0.1);
+            }
+            System.out.printf("O valor total a ser pago é R$ %.2f%d", valorTotal);
+
+        } else if (opcao == 2) {
+            System.out.println("O aluguel foi por quantos dias?");
+            diasAluguel = scan.nextInt();
+            System.out.println("Quantos quilômetros foram percorridos?");
+            kmPercorrido = scan.nextDouble();
+
+            if (kmPercorrido <= 200) {
+                valorTotal = (150 * diasAluguel) + (kmPercorrido * 0.3);
+            } else if (kmPercorrido > 200) {
+                valorTotal = (150 * diasAluguel) + (kmPercorrido * 0.25);
+            }
+            System.out.printf("O valor total a ser pago é R$ %.2f%d", Math.round(valorTotal));
+        }
+
+	}
+
+}

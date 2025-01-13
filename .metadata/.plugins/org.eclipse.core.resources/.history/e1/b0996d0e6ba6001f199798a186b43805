@@ -1,0 +1,22 @@
+package Revisao_LacoFor;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Ex2_While {
+
+	public static void main(String[] args) {
+	Locale.setDefault(Locale.US);
+	Scanner scan = new Scanner(System.in);
+	int num =0;
+	long fatorial = 1;
+	int i = 1;
+	System.out.println("Digite um numero: ");
+	num = Integer.parseInt(scan.nextLine());
+    while (i <= num) { fatorial *=i; 
+    i++;
+    System.out.println("Fatorial de " + num + " é:" + fatorial);
+
+	}
+	}
+	}

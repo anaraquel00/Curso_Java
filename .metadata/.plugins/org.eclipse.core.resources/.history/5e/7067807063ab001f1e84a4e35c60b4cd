@@ -1,0 +1,102 @@
+package métodos;
+
+import java.text.Format;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class switch_menu_restaurante {
+
+	public static void main(String[] args) {
+	Scanner scan = new Scanner (System.in);	
+	Locale.setDefault(Locale.US);
+	
+	/*
+	 * Um restaurante tem um menu 
+	 * com os seguintes pratos e preços: 
+	 * • 1: Pizza →	 * R$35. 
+	 * • 2: Hambúrguer → R$20. 
+	 * • 3: Salada → R$15. 
+	 * • 4: Refrigerante → R$5.
+	 * Receba o código do prato e a quantidade desejada.
+	 * Exiba o valor total a pagar. Se o código for inválido, 
+	 * exiba "Prato não disponível".
+	 */ 
+	 // Exibir o menu
+	
+	// Exibir o menu
+    System.out.println("Menu do Restaurante:");
+    System.out.println("1: Pizza → R$35");
+    System.out.println("2: Hambúrguer → R$20");
+    System.out.println("3: Salada → R$15");
+    System.out.println("4: Refrigerante → R$5");
+
+    // Receber o código do prato
+    int codigoPrato = 0;
+    boolean codigoValido = false;
+    
+    // Validar a entrada do código do prato
+    while (!codigoValido) {
+        System.out.println("Digite o código do prato (1 a 4):");
+        try {
+            codigoPrato = Integer.parseInt(scan.nextLine());
+            if (codigoPrato >= 1 && codigoPrato <= 4) {
+                codigoValido = true;
+            } else {
+                System.out.println("Código inválido. Digite um código entre 1 e 4.");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Entrada inválida! Por favor, insira um número entre 1 e 4.");
+        }
+    }
+
+    // Receber a quantidade desejada
+    int quantidade = 0;
+    boolean quantidadeValida = false;
+    
+    // Validar a entrada da quantidade
+    while (!quantidadeValida) {
+        System.out.println("Digite a quantidade:");
+        try {
+            quantidade = Integer.parseInt(scan.nextLine());
+            if (quantidade > 0) {
+                quantidadeValida = true;
+            } else {
+                System.out.println("Quantidade deve ser maior que 0.");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Entrada inválida! Por favor, insira um número válido para a quantidade.");
+        }
+    }
+
+    // Variável para armazenar o valor total
+    double valorTotal = 0;
+
+    // Processar o código do prato
+    switch (codigoPrato) {
+        case 1: // Pizza
+            valorTotal = 35.0 * quantidade;
+            System.out.printf("Você pediu %d Pizza(s). Total a pagar: R$%.2f%n", quantidade, valorTotal);
+            break;
+        case 2: // Hambúrguer
+            valorTotal = 20.0 * quantidade;
+            System.out.printf("Você pediu %d Hambúrguer(es). Total a pagar: R$%.2f%n", quantidade, valorTotal);
+            break;
+        case 3: // Salada
+            valorTotal = 15.0 * quantidade;
+            System.out.printf("Você pediu %d Salada(s). Total a pagar: R$%.2f%n", quantidade, valorTotal);
+            break;
+        case 4: // Refrigerante
+            valorTotal = 5.0 * quantidade;
+            System.out.printf("Você pediu %d Refrigerante(s). Total a pagar: R$%.2f%n", quantidade, valorTotal);
+            break;
+    }
+
+    // Fechar o scanner
+    scan.close();
+
+
+   }
+   	
+	}
+
+

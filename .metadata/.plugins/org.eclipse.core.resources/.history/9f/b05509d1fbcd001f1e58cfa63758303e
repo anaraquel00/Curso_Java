@@ -1,0 +1,11 @@
+package Livro;
+
+public class Autor {
+String nome;
+String email;
+String cpf;
+public void mostrarDetalhes() {
+	
+}
+
+}

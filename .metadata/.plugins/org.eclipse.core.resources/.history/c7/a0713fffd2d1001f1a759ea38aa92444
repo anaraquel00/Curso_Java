@@ -1,0 +1,71 @@
+package POO_2;
+
+public class Conta_Bancaria {
+private String Titular;
+protected String Tipo;
+public int numeroConta;
+private float Saldo;
+private boolean Status;
+
+public void StatusConta() {
+System.out.println("----------------");
+System.out.println("Titular: "+this.getTitular());
+System.out.println("Num. da Conta: "+this.getNumeroConta());
+System.out.println("Saldo: "+this.getSaldo());
+System.out.println("Status da conta: "+this.getSaldo());
+}
+
+public void abrirConta(String t) {
+	this.setTipo(t);
+	this.setStatus(true);
+	if (t== "cc") {
+	this.setSaldo(50);
+	}
+
+	
+}
+
+public void fecharConta() {
+	
+}
+
+public String getTipo() {
+	return Tipo;
+}
+
+public void setTipo(String tipo) {
+	Tipo = tipo;
+}
+
+public int getNumeroConta() {
+	return numeroConta;
+}
+public void setNumeroConta(int numeroConta) {
+	this.numeroConta = numeroConta;
+}
+public boolean Status() {
+	return Status;
+}
+public void setStatus(boolean status) {
+	Status = status;
+}
+public String getTitular() {
+	return Titular;
+}
+public void setTitular(String titular) {
+	Titular = titular;
+}
+public float getSaldo() {
+	return Saldo;
+}
+public float setSaldo(float saldo) {
+	return this.Saldo = Saldo;
+}
+public void depositar() {
+}
+public void sacar() {
+		
+	}
+}
+
+

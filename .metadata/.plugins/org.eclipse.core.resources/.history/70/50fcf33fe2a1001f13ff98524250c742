@@ -1,0 +1,24 @@
+package Condicionais_Compostas;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Sorteio {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		Random random = new Random();
+		System.out.println("Digite um numero entre 1 e 5:");
+		
+		int valorAleatorio = random.nextInt(5) + 1;
+		int valorInformado = scanner.nextInt();
+		if (valorInformado == valorAleatorio) {
+		System.out.println("Parabens, você acertou");
+		}
+		else {
+		System.out.printf("Sinto muito, o número correto era %d.", valorAleatorio);
+		}
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class JoKenPo {
+
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);	
+	System.out.println("Pedra, Papel ou Tesoura? ");
+	String Pedra = scanner.nextLine();
+	Pedra = scanner.nextLine();
+	String Papel = scanner.nextLine();
+	Papel = scanner.nextLine();
+	String Tesoura = scanner.nextLine();
+	Tesoura = scanner.nextLine();
+	if (Pedra != null) {
+		System.out.println("Você acertou");	
+	}
+	else { 
+		System.out.println("Você perdeu");
+	}
+	}
+
+
+	}
+
+

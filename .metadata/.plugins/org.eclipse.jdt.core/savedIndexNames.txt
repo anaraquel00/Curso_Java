@@ -1,0 +1,15 @@
+INDEX VERSION 1.134+/media/ana/739fe900-d3aa-4aa2-b9d1-436f6a077d75/home/ana/Curso_Java/.metadata/.plugins/org.eclipse.jdt.core
+2076493957.index
+407715266.index
+3809165114.index
+1085050835.index
+2282267835.index
+1638945242.index
+1865797976.index
+1270199342.index
+1834456725.index
+2891341781.index
+3639288285.index
+1881663570.index
+3351198407.index
+1903477432.index

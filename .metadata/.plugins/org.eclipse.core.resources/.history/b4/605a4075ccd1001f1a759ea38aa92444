@@ -1,0 +1,27 @@
+package POO_2;
+
+public class Conta_Bancaria {
+private String Titular;
+
+private int Saldo;
+
+public String getTitular() {
+	return Titular;
+}
+public void setTitular(String titular) {
+	Titular = titular;
+}
+public int getSaldo() {
+	return Saldo;
+}
+public void setSaldo(int saldo) {
+	Saldo = saldo;
+}
+public void depositar() {
+}
+public void sacar() {
+		
+	}
+}
+
+

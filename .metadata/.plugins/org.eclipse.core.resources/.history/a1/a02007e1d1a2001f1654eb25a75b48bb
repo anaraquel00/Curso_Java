@@ -1,0 +1,19 @@
+package Revisao;
+
+import java.util.Scanner;
+
+public class Ex_2_numeros_int {
+
+	public static void main(String[] args) {
+		Scanner nm = new Scanner(System.in);
+		int a;
+		int b;
+		System.out.println("Digite o primeiro numero: ");
+		a = nm.nextInt();
+		System.out.println("Digite o segundo numero: ");
+		b = nm.nextInt();
+		int soma = a + b;
+		System.out.print("Resultado da soma: " + soma);
+	}
+
+}

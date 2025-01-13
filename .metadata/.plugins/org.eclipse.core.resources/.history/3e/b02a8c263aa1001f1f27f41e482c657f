@@ -1,0 +1,10 @@
+package Condicionais_Compostas;
+
+public class Média_Escolar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

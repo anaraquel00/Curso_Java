@@ -1,0 +1,27 @@
+package Condicionais_Compostas;
+
+import java.util.Scanner;
+
+public class Empréstimo {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Salario do cliente: ");
+		double salario = scanner.nextDouble();
+		System.out.println("Valor total do imovel: ");
+		double valorImovel = scanner.nextDouble();
+		System.out.println("Tempo de financiamento: ");
+        double tempoImovel = scanner.nextDouble();
+        System.out.println("Valor da prestaçao: ");
+        double prestacaoImovel = scanner.nextDouble();
+        
+        if (salario * 0.3 > prestacaoImovel ) {
+        	System.out.println("Financiamento aprovado");
+        }
+        else {
+        	System.out.println("Financiamento reprovado");
+        }
+        
+	}
+
+}
